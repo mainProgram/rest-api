@@ -13,9 +13,9 @@ class SkillController extends Controller
 {
     public function index()
     {
-        return new SkillCollection(Skill::paginate(1));
+        // return new SkillCollection(Skill::paginate(1));
         // return SkillResource::collection(Skill::paginate(1));
-        // return SkillResource::collection(Skill::all());
+        return SkillResource::collection(Skill::all());
         // return response()->json("Skills index");
     }
 
